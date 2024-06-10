@@ -131,6 +131,17 @@
     object-position: center;
   }
 }
+.img-item {
+  width: 60px;
+  height: 60px;
+}
+.img-item img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
 
 .modal-carrinho {
   background-color: #fff0da;
@@ -157,6 +168,18 @@
   left: 50%;
   z-index: 0;
   transform: translateX(-50%);
+}
+
+.item-carrinho {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-between;
+}
+.quantidade {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 @media (max-width: 900px) {
