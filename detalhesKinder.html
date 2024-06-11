@@ -18,8 +18,9 @@
   <header>
     <nav aria-label="primaria">
       <div class="voltar">
-
-        <img src="./imgs/arrow.svg" alt="">
+        <a href="./index.html">
+          <img src="./imgs/arrow.svg" alt="">
+        </a>
         <h1 class="titulo cor-0 b"><a href="./index.html">Voltar</a></h1>
 
       </div>
@@ -30,13 +31,24 @@
       <div class="menu">
         <div id="carrinho">
           <div class="modal-carrinho hidden">
-
+            <h1 class=" titulo cor-3">Carrinho está vazio</h1>
           </div>
           <span id="numero">0</span>
           <img src="./imgs/cart.svg" alt="">
         </div>
         <div class="perfil">
           <div class="bg-perfil">
+            <div class="modal-perfil hidden">
+              <div class="perfil">
+                <img src="./imgs/user-circle.svg" alt="">
+                <h1 class="titulo cor-3 medio" cor-3>Meu perfil</h1>
+              </div>
+
+              <div class="logout">
+                <img src="./imgs/logout.svg" alt="">
+                <h1 class="titulo alert medio">Sair</h1>
+              </div>
+            </div>
             <img src="./imgs/woman-user.svg" alt="">
           </div>
 
@@ -58,7 +70,7 @@
       <h1 class="titulo big ">Kinder Bueno</h1>
       <p class="titulo cor-0 md rg" id="corpoTexto">Cone feito com pó de maizena, mergulhado em chocolate líquido quente. Recheio de prestígio com pedaços de kinder bueno.</p>
       <p class="titulo md" id="peso">30 gramas</p>
-      <div class=" ">
+      <div class="preco">
         <p class="titulo cor-0 grande">R$ 8,00</p>
       </div>
       <button class="addCarrinho btn cor-3 sb">Adicionar ao carrinho</button>
