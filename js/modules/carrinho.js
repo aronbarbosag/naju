@@ -3,7 +3,9 @@ if (bodyDetalhes) {
   const quantidadeCarrinho = document.getElementById('numero');
   const btnAddCarrinho = document.querySelector('.addCarrinho');
   const modal_carrinho = document.querySelector('.modal-carrinho');
+  const modal_perfil = document.querySelector('.modal-perfil');
   const icone_carrinho = document.querySelector('#carrinho img');
+  const icone_perfil = document.querySelector('.bg-perfil');
   const bodyDetalhes = document.getElementById('detalhes');
   let quantidade = 0;
   let quantidadeDoItem = 1;
@@ -33,7 +35,18 @@ if (bodyDetalhes) {
 `;
 
   function showModal() {
+    if (!modal_perfil.classList.contains('hidden')) {
+      modal_perfil.classList.add('hidden');
+    }
     modal_carrinho.classList.toggle('hidden');
+  }
+
+  function showModalPerfil() {
+    if (!modal_carrinho.classList.contains('hidden')) {
+      modal_carrinho.classList.add('hidden');
+    }
+
+    modal_perfil.classList.toggle('hidden');
   }
 
   function adicionarItenCarrinho() {
@@ -48,6 +61,7 @@ if (bodyDetalhes) {
   if (bodyDetalhes) {
     btnAddCarrinho.addEventListener('click', adicionarItenCarrinho);
     icone_carrinho.addEventListener('click', showModal);
+    icone_perfil.addEventListener('click', showModalPerfil);
   }
 
   function carrinhoVazio() {
